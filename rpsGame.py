@@ -1,3 +1,5 @@
+#by gg
+
 import random, sys
 print('ROCK, PAPER, SCISSORS')
 
