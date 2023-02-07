@@ -1,6 +1,6 @@
 import random, time, copy
-WIDTH = 12
-HEIGHT = 4
+WIDTH = 10
+HEIGHT = 6
 
 nextCells = []
 for x in range(WIDTH):
@@ -49,11 +49,12 @@ while True:
                 numNeighbors += 1   #右下是活的
 
             if currentCells[x][y] == '#' and (numNeighbors == 2 or numNeighbors == 3):
+                #大于3的也要变成死的
                 nextCells[x][y] = '#'
             elif currentCells[x][y] == '.' and numNeighbors == 3:
                 nextCells[x][y] = '#'
             else:
                 nextCells[x][y] = '.'
-            #print(x,y,numNeighbors)
+            print(x,y,numNeighbors)
 
         time.sleep(1)
