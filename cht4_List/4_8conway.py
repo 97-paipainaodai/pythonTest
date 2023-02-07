@@ -9,7 +9,7 @@ for x in range(WIDTH):
         if random.randint(0,1) == 0:
             column.append('#') #增加一个活方块
         else:
-            column.append(' ') #增加一个死方块
+            column.append('.') #增加一个死方块
     nextCells.append(column)
 
 while True:
@@ -50,9 +50,10 @@ while True:
 
             if currentCells[x][y] == '#' and (numNeighbors == 2 or numNeighbors == 3):
                 nextCells[x][y] = '#'
-            elif currentCells[x][y] == ' ' and numNeighbors == 3:
+            elif currentCells[x][y] == '.' and numNeighbors == 3:
                 nextCells[x][y] = '#'
             else:
-                nextCells[x][y] = ' '
+                nextCells[x][y] = '.'
+            #print(x,y,numNeighbors)
 
         time.sleep(1)
