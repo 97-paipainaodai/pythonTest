@@ -1,3 +1,4 @@
+import pprint
 #setdefult():  to set a default value for a key
 spam = {'color': 'red', 'age': 42}
 print(spam)
@@ -19,3 +20,4 @@ for character in message:
     count[character] = count[character] + 1
 
 print(count)
+pprint.pprint(count)
