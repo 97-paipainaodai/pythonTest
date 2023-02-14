@@ -8,4 +8,4 @@ print(spam)
 
 print('HELLO is supper: '+str('HELLO'.isupper()))
 print('HELLO is lower: '+str('HELLO'.islower()))
-print('Hello'.upper().lower().upper().upper())
+print('Hello'.upper().lower().upper().upper()) 
