@@ -17,5 +17,6 @@ if keyphrase in TEXT:
 else:
     print('There is no text for ' + keyphrase)
 
+#new a .bat document
 #@py.exe D:\yss\TEST\cht6_String\6_6mclip.py %*
 #@pause
